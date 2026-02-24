@@ -59,7 +59,11 @@
       </nav>
 
       <div class="header-cta">
-        <a class="btn btn-primary" href="https://strataadv.lovable.app">Find My Biggest Bottleneck</a>
+        <a class="btn btn-primary"
+           href="https://strataadv.lovable.app"
+           onclick="posthog.capture('cta_clicked', {button: 'find_my_bottleneck', location: 'header'})">
+          Find My Biggest Bottleneck
+        </a>
       </div>
     </div>
   </header>
@@ -84,15 +88,19 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary btn-lg" href="https://strataadv.lovable.app">Find My Biggest Bottleneck</a>
+            <a class="btn btn-primary btn-lg"
+               href="https://strataadv.lovable.app"
+               onclick="posthog.capture('cta_clicked', {button: 'find_my_bottleneck', location: 'hero'})">
+              Find My Biggest Bottleneck
+            </a>
             <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
           </div>
 
-<p class="cta-subnote">Free to start • No calls • Get your report in minutes • No upselling</p>
+          <p class="cta-subnote">Free to start • No calls • Get your report in minutes • No upselling</p>
 
           <p class="reassurance">
             Built by operators with 25+ years of experience in operations, supply chain, and growth strategy for founders and operators who need decision clarity fast — without weeks of consulting or complicated tooling.
-          </p>          </p>
+          </p>
 
           <div class="trust-row">
             <div class="trust-item">
@@ -199,7 +207,11 @@
         </div>
 
         <div class="dark-cta">
-          <a class="btn btn-primary btn-lg" href="https://strataadv.lovable.app">Find My Biggest Bottleneck</a>
+          <a class="btn btn-primary btn-lg"
+             href="https://strataadv.lovable.app"
+             onclick="posthog.capture('cta_clicked', {button: 'find_my_bottleneck', location: 'deliverable'})">
+            Find My Biggest Bottleneck
+          </a>
           <p class="reassurance reassurance-dark">You'll see the report on screen + download options.</p>
         </div>
       </div>
@@ -291,7 +303,11 @@
       <div class="container closing-inner">
         <h2 class="closing-title">If you're running hard but not moving fast — let's find the constraint.</h2>
         <p class="closing-text">A calm, practical report — designed to help you decide what matters next.</p>
-        <a class="btn btn-primary btn-lg" href="https://strataadv.lovable.app">Find My Biggest Bottleneck</a>
+        <a class="btn btn-primary btn-lg"
+           href="https://strataadv.lovable.app"
+           onclick="posthog.capture('cta_clicked', {button: 'find_my_bottleneck', location: 'closing'})">
+          Find My Biggest Bottleneck
+        </a>
         <p class="closing-signoff">— Strata Growth Advisors</p>
       </div>
     </section>
