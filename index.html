@@ -4,17 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Strata Growth Advisors — AI Decision Intelligence for SMEs</title>
-  <meta name="description" content="Your business has a bottleneck costing you time and money right now. Strata finds it in minutes — free. No calls, no consultants, just clarity." />
+  <meta name="description" content="Find the biggest bottleneck holding your business back — and what to do next. Get an AI-generated decision intelligence report in minutes." />
   <meta name="theme-color" content="#f6f1e6" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Strata Growth Advisors — Find Your Biggest Business Bottleneck" />
-  <meta property="og:description" content="Get an AI-powered diagnostic report in minutes. No calls. No consultants. Free to start." />
-  <meta property="og:image" content="assets/og-image.png" />
-  <meta property="og:url" content="https://strataadv.com" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-
   <link rel="icon" href="assets/favicon.ico" />
   <link rel="stylesheet" href="style.css" />
 
@@ -50,172 +41,9 @@
     });
   </script>
 
-  <style>
-    /* ── INLINE IMPROVEMENTS ── */
-
-    /* Beta badge */
-    .beta-banner {
-      background: #1a2e1a;
-      color: #7dc47d;
-      text-align: center;
-      font-size: 0.82rem;
-      letter-spacing: 0.08em;
-      padding: 10px 16px;
-      font-weight: 500;
-    }
-    .beta-banner span { opacity: 0.7; margin: 0 8px; }
-
-    /* Social proof strip */
-    .proof-strip {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
-      padding: 32px 24px;
-      border-top: 1px solid rgba(0,0,0,0.07);
-      border-bottom: 1px solid rgba(0,0,0,0.07);
-      background: #faf8f3;
-    }
-    .proof-strip-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.88rem;
-      color: #555;
-    }
-    .proof-strip-item .icon { font-size: 1.1rem; }
-    .proof-strip-item strong { color: #1a1a1a; font-weight: 600; }
-
-    /* Industry cards */
-    .industry-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-      margin-top: 40px;
-    }
-    .industry-card {
-      border: 1px solid rgba(0,0,0,0.1);
-      border-radius: 8px;
-      padding: 24px 20px;
-      background: #fff;
-      transition: box-shadow 0.2s, transform 0.2s;
-    }
-    .industry-card:hover {
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-      transform: translateY(-2px);
-    }
-    .industry-card .ind-icon { font-size: 1.5rem; margin-bottom: 12px; display: block; }
-    .industry-card h4 { font-size: 0.95rem; font-weight: 600; color: #1a1a1a; margin-bottom: 6px; }
-    .industry-card p { font-size: 0.83rem; color: #666; line-height: 1.6; }
-
-    /* Beta testimonial */
-    .testimonial-strip {
-      background: #f0ede6;
-      border-top: 1px solid rgba(0,0,0,0.07);
-      border-bottom: 1px solid rgba(0,0,0,0.07);
-      padding: 48px 24px;
-      text-align: center;
-    }
-    .testimonial-strip blockquote {
-      font-size: clamp(1.05rem, 2vw, 1.3rem);
-      font-style: italic;
-      color: #2a2a2a;
-      max-width: 640px;
-      margin: 0 auto 20px;
-      line-height: 1.6;
-    }
-    .testimonial-strip cite {
-      font-style: normal;
-      font-size: 0.82rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #888;
-    }
-
-    /* Consultant comparison */
-    .vs-section {
-      background: #fff;
-    }
-    .vs-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin-top: 40px;
-      max-width: 720px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    @media (max-width: 560px) { .vs-grid { grid-template-columns: 1fr; } }
-    .vs-col { border-radius: 10px; padding: 28px 24px; }
-    .vs-col.them { background: #f5f5f5; border: 1px solid #e0e0e0; }
-    .vs-col.us { background: #1a2e1a; border: 1px solid #2a4a2a; color: #e8f5e8; }
-    .vs-col h4 { font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px; opacity: 0.6; }
-    .vs-col.us h4 { color: #7dc47d; opacity: 1; }
-    .vs-row { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 14px; font-size: 0.9rem; line-height: 1.5; }
-    .vs-row .check { flex-shrink: 0; margin-top: 2px; }
-    .vs-col.them .vs-row { color: #888; }
-    .vs-col.us .vs-row { color: #d4ecd4; }
-
-    /* Email capture */
-    .email-capture {
-      background: #1a1a2e;
-      padding: 60px 24px;
-      text-align: center;
-      color: #d4d0c8;
-    }
-    .email-capture h3 {
-      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-      color: #fff;
-      margin-bottom: 12px;
-      font-weight: 700;
-    }
-    .email-capture p { font-size: 0.92rem; margin-bottom: 28px; opacity: 0.7; }
-    .email-form {
-      display: flex;
-      gap: 10px;
-      max-width: 440px;
-      margin: 0 auto;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .email-form input[type="email"] {
-      flex: 1;
-      min-width: 220px;
-      padding: 14px 18px;
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 4px;
-      background: rgba(255,255,255,0.08);
-      color: #fff;
-      font-size: 0.92rem;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-    .email-form input::placeholder { color: rgba(255,255,255,0.4); }
-    .email-form input:focus { border-color: rgba(255,255,255,0.5); }
-    .email-form button {
-      padding: 14px 24px;
-      background: #c9a84c;
-      color: #1a1a1a;
-      border: none;
-      border-radius: 4px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    .email-form button:hover { background: #e0be6a; }
-    .email-note { font-size: 0.76rem; margin-top: 12px; opacity: 0.45; }
-  </style>
 </head>
 
 <body>
-
-  <!-- ── BETA BANNER ── -->
-  <div class="beta-banner">
-    🚀 Now in early access — join founders and operators using Strata before public launch
-    <span>·</span>
-    Free to start
-  </div>
 
   <header class="site-header">
     <div class="container header-inner">
@@ -233,7 +61,6 @@
       <div class="header-cta">
         <a class="btn btn-primary"
            href="https://strataadv.lovable.app"
-           target="_blank"
            onclick="posthog.capture('cta_clicked', {button: 'find_my_bottleneck', location: 'header'})">
           Find My Biggest Bottleneck
         </a>
@@ -251,38 +78,42 @@
           <p class="kicker">AI Decision Intelligence for startups &amp; SMEs</p>
 
           <h1 class="display">
-            Your business has a bottleneck costing you time and money right now.
-            <span class="accent">Strata finds it in minutes — free.</span>
+            Most business owners know something's off —
+            <span class="accent">but not exactly where it's leaking.</span>
           </h1>
 
           <p class="lead">
-            Most founders and SME owners spend months circling the same problems without ever naming the real constraint. Strata runs a fast, structured diagnostic and hands you a clear report: the bottleneck, the root cause, and the exact actions to take next. No consultants. No calls. No waiting.
+            Strata runs a fast, structured diagnostic and gives you a clear, practical report:
+            the bottleneck, the root cause, and the top actions to take next.
           </p>
 
           <div class="hero-actions">
             <a class="btn btn-primary btn-lg"
                href="https://strataadv.lovable.app"
-               target="_blank"
                onclick="posthog.capture('cta_clicked', {button: 'find_my_bottleneck', location: 'hero'})">
-              Find My Biggest Bottleneck →
+              Find My Biggest Bottleneck
             </a>
-            <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
+            <a class="btn btn-ghost btn-lg"
+               href="/sample-report.html"
+               onclick="posthog.capture('sample_report_viewed', {location: 'hero'})">
+              See a sample report
+            </a>
           </div>
 
-          <p class="cta-subnote">Free to start • Results in under 3 minutes • No calls • No upselling</p>
+          <p class="cta-subnote">Free to start • No calls • Get your report in minutes • No upselling</p>
 
           <p class="reassurance">
-            Built by operators with 25+ years of experience in operations, supply chain, and growth strategy — the same frameworks used in consulting engagements that cost thousands, now free and instant.
+            Built by operators with 25+ years of experience in operations, supply chain, and growth strategy for founders and operators who need decision clarity fast — without weeks of consulting or complicated tooling.
           </p>
 
           <div class="trust-row">
             <div class="trust-item">
-              <span class="trust-label">Output</span>
-              <span class="trust-value">Practical actions + KPI framework</span>
+              <span class="trust-label">Built for</span>
+              <span class="trust-value">Retail • Logistics • Manufacturing • Services</span>
             </div>
             <div class="trust-item">
-              <span class="trust-label">Time</span>
-              <span class="trust-value">Under 3 minutes</span>
+              <span class="trust-label">Output</span>
+              <span class="trust-value">Practical actions + KPI framework</span>
             </div>
           </div>
         </div>
@@ -306,32 +137,17 @@
               <span>Key Findings</span>
               <span>Quick Wins</span>
               <span>KPI Framework</span>
+              <a href="/sample-report.html"
+                 style="margin-left:auto; color: var(--gold); font-weight:600; text-decoration:none;"
+                 onclick="posthog.capture('sample_report_viewed', {location: 'hero_mock'})">
+                View full sample →
+              </a>
             </div>
           </div>
         </div>
 
       </div>
     </section>
-
-    <!-- ── PROOF STRIP ── -->
-    <div class="proof-strip">
-      <div class="proof-strip-item">
-        <span class="icon">⚡</span>
-        <span>Results in <strong>under 3 minutes</strong></span>
-      </div>
-      <div class="proof-strip-item">
-        <span class="icon">💰</span>
-        <span>Replaces <strong>thousands in consulting fees</strong></span>
-      </div>
-      <div class="proof-strip-item">
-        <span class="icon">🔒</span>
-        <span><strong>No calls</strong> — fully self-serve</span>
-      </div>
-      <div class="proof-strip-item">
-        <span class="icon">🛠️</span>
-        <span>Built by <strong>25+ year operators</strong></span>
-      </div>
-    </div>
 
     <!-- ── WHY STRATA ── -->
     <section class="section" id="why">
@@ -347,125 +163,65 @@
           <div class="pillar">
             <div class="pillar-num">1</div>
             <h3 class="pillar-title">Clarity on what's broken</h3>
-            <p class="pillar-text">A direct view of the biggest bottleneck and where the leakage is happening — no vague frameworks, no jargon.</p>
+            <p class="pillar-text">A direct view of the biggest bottleneck and where the leakage is happening.</p>
           </div>
 
           <div class="pillar">
             <div class="pillar-num">2</div>
             <h3 class="pillar-title">Practical actions you can actually execute</h3>
-            <p class="pillar-text">A short list of high-leverage moves — not a 40-page strategy lecture that sits unread in a folder.</p>
+            <p class="pillar-text">A short list of high-leverage moves — not a 40-page strategy lecture.</p>
           </div>
 
           <div class="pillar">
             <div class="pillar-num">3</div>
             <h3 class="pillar-title">A roadmap with KPI discipline</h3>
-            <p class="pillar-text">Clear priorities, risk notes, and KPIs to track progress week by week — so you know if it's working.</p>
-          </div>
-        </div>
-
-        <!-- Industry cards -->
-        <h3 style="margin-top:64px; margin-bottom:0; font-size:1.1rem; font-weight:600; color:#1a1a1a;">Built for your industry</h3>
-        <div class="industry-grid">
-          <div class="industry-card">
-            <span class="ind-icon">🛍️</span>
-            <h4>Retail</h4>
-            <p>Margin leaking and can't pinpoint where? We find the exact point of loss.</p>
-          </div>
-          <div class="industry-card">
-            <span class="ind-icon">🚚</span>
-            <h4>Logistics</h4>
-            <p>Operational chaos slowing delivery and burning cost? We name the constraint.</p>
-          </div>
-          <div class="industry-card">
-            <span class="ind-icon">🏭</span>
-            <h4>Manufacturing</h4>
-            <p>Output not matching capacity? We surface the bottleneck in your process.</p>
-          </div>
-          <div class="industry-card">
-            <span class="ind-icon">💼</span>
-            <h4>Services</h4>
-            <p>Revenue plateauing despite a full team? We diagnose what's blocking scale.</p>
+            <p class="pillar-text">Clear priorities, risk notes, and KPIs to track progress week by week.</p>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- ── TESTIMONIAL ── -->
-    <div class="testimonial-strip">
-      <blockquote>
-        "Genuinely useful — got more clarity on our biggest operational problem in 3 minutes than we had after hours of internal planning sessions."
-      </blockquote>
-      <cite>— Beta tester, logistics startup</cite>
-    </div>
 
     <!-- ── WHAT YOU GET ── -->
     <section class="section section-dark" id="deliverable">
       <div class="container">
         <h2 class="section-title section-title-dark">What You Get</h2>
         <p class="section-intro section-intro-dark">
-          A report you can use immediately — written for operators and founders, not consultants.
+          A report you can use immediately — written for operators and founders.
         </p>
 
         <div class="deliverable-grid">
           <div class="deliverable-item">
             <div class="deliverable-icon">01</div>
             <h3>Bottleneck</h3>
-            <p>The #1 constraint slowing output, growth, or cash — named clearly, not buried in caveats.</p>
+            <p>The #1 constraint slowing output, growth, or cash.</p>
           </div>
 
           <div class="deliverable-item">
             <div class="deliverable-icon">02</div>
             <h3>Root Cause</h3>
-            <p>Why it's happening — and what's reinforcing it so it keeps coming back.</p>
+            <p>Why it's happening — and what's reinforcing it.</p>
           </div>
 
           <div class="deliverable-item">
             <div class="deliverable-icon">03</div>
             <h3>Top 3 Actions</h3>
-            <p>The highest-leverage next moves, in plain language you can brief to your team today.</p>
+            <p>The highest-leverage next moves, in plain language.</p>
           </div>
 
           <div class="deliverable-item">
             <div class="deliverable-icon">04</div>
             <h3>Roadmap</h3>
-            <p>30–90 day plan + KPI framework to measure progress and keep momentum.</p>
+            <p>30–90 day plan + KPI framework to measure progress.</p>
           </div>
         </div>
 
         <div class="dark-cta">
           <a class="btn btn-primary btn-lg"
              href="https://strataadv.lovable.app"
-             target="_blank"
              onclick="posthog.capture('cta_clicked', {button: 'find_my_bottleneck', location: 'deliverable'})">
-            Find My Biggest Bottleneck →
+            Find My Biggest Bottleneck
           </a>
-          <p class="reassurance reassurance-dark">View your report on screen + download options available.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── VS CONSULTANTS ── -->
-    <section class="section vs-section" id="vs">
-      <div class="container">
-        <h2 class="section-title">Strata vs. Hiring a Consultant</h2>
-        <p class="section-intro">The same structured diagnostic thinking — without the weeks of waiting or the invoice.</p>
-        <div class="vs-grid">
-          <div class="vs-col them">
-            <h4>Traditional Consultant</h4>
-            <div class="vs-row"><span class="check">✗</span><span>Weeks before you see any output</span></div>
-            <div class="vs-row"><span class="check">✗</span><span>Thousands in fees before results</span></div>
-            <div class="vs-row"><span class="check">✗</span><span>Discovery calls, NDAs, onboarding</span></div>
-            <div class="vs-row"><span class="check">✗</span><span>40-page report you can't act on alone</span></div>
-            <div class="vs-row"><span class="check">✗</span><span>Recommendations built for large teams</span></div>
-          </div>
-          <div class="vs-col us">
-            <h4>✦ Strata</h4>
-            <div class="vs-row"><span class="check">✓</span><span>Results in under 3 minutes</span></div>
-            <div class="vs-row"><span class="check">✓</span><span>Free to start — no invoice, no catch</span></div>
-            <div class="vs-row"><span class="check">✓</span><span>No calls, no setup, no commitment</span></div>
-            <div class="vs-row"><span class="check">✓</span><span>Plain-language report you act on immediately</span></div>
-            <div class="vs-row"><span class="check">✓</span><span>Built specifically for founders and SME operators</span></div>
-          </div>
+          <p class="reassurance reassurance-dark">You'll see the report on screen + download options.</p>
         </div>
       </div>
     </section>
@@ -480,19 +236,19 @@
           <div class="step">
             <div class="step-badge">1</div>
             <h3>Answer a few focused questions</h3>
-            <p>About your business, operations, and goals — designed for speed and clarity. Takes under 3 minutes.</p>
+            <p>About your business, operations, and goals — designed for speed and clarity.</p>
           </div>
 
           <div class="step">
             <div class="step-badge">2</div>
             <h3>Strata runs the diagnostic</h3>
-            <p>We detect constraints, root causes, and the best next actions based on your specific context — not generic advice.</p>
+            <p>We detect constraints, root causes, and the best next actions based on your context.</p>
           </div>
 
           <div class="step">
             <div class="step-badge">3</div>
-            <h3>Get a clear, actionable report</h3>
-            <p>View it instantly, download it, and use the KPI framework to track improvements week by week.</p>
+            <h3>Get a clear report</h3>
+            <p>View it instantly, download it, and use the KPI framework to track improvements.</p>
           </div>
         </div>
       </div>
@@ -507,42 +263,37 @@
           <details>
             <summary>Is this actually free?</summary>
             <div class="faq-content">
-              Yes. You can start free and generate your first analysis report without any calls, credit cards, or commitments.
-            </div>
-          </details>
-
-          <details>
-            <summary>How is this different from hiring a consultant?</summary>
-            <div class="faq-content">
-              A traditional consultant takes weeks, costs thousands, and often delivers a report you can't act on without their help. Strata gives you the same structured diagnostic thinking — instantly, free, and written in plain language you can execute on today without hand-holding.
+              Yes. You can start free and generate your first analysis report without any calls.
             </div>
           </details>
 
           <details>
             <summary>What happens after I click the button?</summary>
             <div class="faq-content">
-              You'll answer a short diagnostic about your business. Strata generates your report, and you can view it on-screen immediately. Download and email options are available inside the app.
+              You'll answer a short diagnostic, Strata generates your report, and you can view it on-screen.
+              Download and email options are available inside the app.
             </div>
           </details>
 
           <details>
             <summary>Who is this for?</summary>
             <div class="faq-content">
-              Startups and SMEs in retail, logistics, manufacturing, and service businesses who need decision clarity fast — especially around bottlenecks, leakage, and execution priorities. If you're running hard but not moving fast, this is for you.
+              Startups and SMEs in retail, logistics, manufacturing, and service businesses who need
+              decision clarity fast — especially around bottlenecks, leakage, and execution priorities.
             </div>
           </details>
 
           <details>
             <summary>Do I need to install anything?</summary>
             <div class="faq-content">
-              No. It runs entirely in the browser. No downloads, no complex setup required.
+              No. It runs in the browser. No complex setup required.
             </div>
           </details>
 
           <details>
             <summary>Will someone call me?</summary>
             <div class="faq-content">
-              No. Strata is fully self-serve. You control the pace — no sales calls, no follow-up unless you want it.
+              No. Strata is fully self-serve. You control the pace.
             </div>
           </details>
 
@@ -556,27 +307,15 @@
       </div>
     </section>
 
-    <!-- ── EMAIL CAPTURE ── -->
-    <div class="email-capture">
-      <h3>Not ready to dive in yet?</h3>
-      <p>Get our free Bottleneck Checklist — 12 questions every SME owner should be able to answer about their business.</p>
-      <form class="email-form" onsubmit="handleEmailCapture(event)">
-        <input type="email" placeholder="your@email.com" required />
-        <button type="submit">Send Me the Checklist</button>
-      </form>
-      <p class="email-note">No spam. Unsubscribe anytime.</p>
-    </div>
-
     <!-- ── CLOSING CTA ── -->
     <section class="closing">
       <div class="container closing-inner">
-        <h2 class="closing-title">You already know something's holding your business back. Now find out exactly what it is.</h2>
-        <p class="closing-text">Strata gives you the clarity that used to cost thousands in consulting fees — in minutes, not weeks, with no calls required.</p>
+        <h2 class="closing-title">If you're running hard but not moving fast — let's find the constraint.</h2>
+        <p class="closing-text">A calm, practical report — designed to help you decide what matters next.</p>
         <a class="btn btn-primary btn-lg"
            href="https://strataadv.lovable.app"
-           target="_blank"
            onclick="posthog.capture('cta_clicked', {button: 'find_my_bottleneck', location: 'closing'})">
-          I'm Ready — Show Me My Report →
+          Find My Biggest Bottleneck
         </a>
         <p class="closing-signoff">— Strata Growth Advisors</p>
       </div>
@@ -599,14 +338,6 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    function handleEmailCapture(e) {
-      e.preventDefault();
-      const email = e.target.querySelector('input[type="email"]').value;
-      posthog.capture('email_captured', { email: email, location: 'email_capture_strip' });
-      e.target.innerHTML = '<p style="color:#7dc47d; font-weight:600; font-size:0.95rem;">✓ Check your inbox — the checklist is on its way.</p>';
-      // TODO: wire up to your email provider (Mailchimp, ConvertKit, etc.)
-    }
   </script>
 
 </body>
