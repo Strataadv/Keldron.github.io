@@ -330,7 +330,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/">
-        <img src="assets/keldron_logo_with_tagline_strategy_growth.png" alt="Keldron" class="brand-mark" />
+        <img
+          src="assets/keldron_with_tagline.png"
+          alt="Keldron"
+          class="brand-mark"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+        />
+        <span style="display:none; font-size:20px; font-weight:800; color:var(--ink,#0f0e0c);">Keldron</span>
       </a>
 
       <nav class="nav">
@@ -474,7 +480,6 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-left">
-        <img src="assets/keldron_logo_with_tagline_strategy_growth.png" alt="Keldron" style="height:48px; width:auto; margin-bottom:8px; display:block;" />
         <div class="footer-brand">Keldron</div>
         <div class="footer-muted">The deep source of sustainable growth.</div>
       </div>
