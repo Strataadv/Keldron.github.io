@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Keldron — AI Decision Intelligence for Entrepreneurs &amp; SMBs</title>
-  <meta name="description" content="Keldron turns a few top-line inputs into decision clarity — your real bottleneck, what to fix first, and a 180-day execution plan. No dashboards, no jargon, no sensitive data required." />
+  <title>Contact — Keldron</title>
+  <meta name="description" content="Get in touch with Keldron. Ask a question, share feedback, or tell us about your business. We read every message." />
   <meta name="theme-color" content="#f6f1e6" />
   <link rel="icon" href="assets/favicon.ico" />
   <link rel="stylesheet" href="style.css" />
@@ -41,6 +41,288 @@
     });
   </script>
 
+  <style>
+    .contact-hero {
+      background: var(--ink, #0f0e0c);
+      color: var(--paper, #f6f1e6);
+      padding: 80px 0 64px;
+      text-align: center;
+    }
+
+    .contact-hero .kicker {
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold, #c8a44a);
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .contact-hero h1 {
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-hero p {
+      font-size: 17px;
+      color: rgba(246,241,230,0.7);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+
+    .contact-body {
+      padding: 72px 0 96px;
+      background: var(--bg, #f6f1e6);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 64px;
+      align-items: start;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .contact-info {
+      position: sticky;
+      top: 32px;
+    }
+
+    .contact-info-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--ink, #0f0e0c);
+    }
+
+    .contact-info-body {
+      font-size: 15px;
+      color: #5a5248;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .contact-divider {
+      width: 40px;
+      height: 3px;
+      background: var(--gold, #c8a44a);
+      margin-bottom: 32px;
+      border: none;
+    }
+
+    .contact-method {
+      margin-bottom: 28px;
+    }
+
+    .contact-method-label {
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold, #c8a44a);
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .contact-method-value {
+      font-size: 16px;
+      color: var(--ink, #0f0e0c);
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(15,14,12,0.15);
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+
+    .contact-method-value:hover {
+      border-color: var(--gold, #c8a44a);
+      color: var(--gold, #c8a44a);
+    }
+
+    .contact-note {
+      margin-top: 32px;
+      padding: 16px 20px;
+      background: rgba(200,164,74,0.08);
+      border-left: 3px solid var(--gold, #c8a44a);
+      font-size: 13.5px;
+      color: #5a5248;
+      line-height: 1.6;
+    }
+
+    .contact-form-wrap {
+      background: #fff;
+      border: 1px solid rgba(15,14,12,0.08);
+      padding: 40px;
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #5a5248;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .form-label span {
+      color: var(--gold, #c8a44a);
+      margin-left: 2px;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid rgba(15,14,12,0.15);
+      background: var(--bg, #f6f1e6);
+      font-size: 15px;
+      color: var(--ink, #0f0e0c);
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+      box-sizing: border-box;
+      border-radius: 0;
+      appearance: none;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      border-color: var(--gold, #c8a44a);
+      background: #fff;
+    }
+
+    .form-select {
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235a5248' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 40px;
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 140px;
+      line-height: 1.6;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 15px 32px;
+      background: var(--ink, #0f0e0c);
+      color: var(--paper, #f6f1e6);
+      border: none;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      transition: background 0.2s, transform 0.1s;
+      margin-top: 8px;
+    }
+
+    .form-submit:hover {
+      background: var(--gold, #c8a44a);
+      color: var(--ink, #0f0e0c);
+    }
+
+    .form-submit:active {
+      transform: translateY(1px);
+    }
+
+    .form-submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .form-privacy {
+      font-size: 12px;
+      color: #8a8070;
+      margin-top: 12px;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .form-privacy a {
+      color: #8a8070;
+      border-bottom: 1px solid rgba(138,128,112,0.4);
+      text-decoration: none;
+    }
+
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 48px 24px;
+    }
+
+    .form-success.visible {
+      display: block;
+    }
+
+    .success-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--gold, #c8a44a);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 24px;
+    }
+
+    .success-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--ink, #0f0e0c);
+    }
+
+    .success-body {
+      font-size: 15px;
+      color: #5a5248;
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+
+    @media (max-width: 720px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .contact-info {
+        position: static;
+      }
+      .contact-form-wrap {
+        padding: 28px 20px;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -58,312 +340,15 @@
       </a>
 
       <nav class="nav">
-        <a href="#why">Why Keldron</a>
-        <a href="#deliverable">What You Get</a>
-        <a href="#how">How It Works</a>
-        <a href="#faq">FAQ</a>
+        <a href="/#why">Why Keldron</a>
+        <a href="/#deliverable">What You Get</a>
+        <a href="/#how">How It Works</a>
+        <a href="/#faq">FAQ</a>
         <a href="/contact.html">Contact</a>
       </nav>
 
       <div class="header-cta">
         <a class="btn btn-primary"
            href="https://app.keldron.io"
-           onclick="posthog.capture('cta_clicked', {button: 'find_my_bottleneck', location: 'header'})">
-          Find My Bottleneck — It's Free
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- ── HERO ── -->
-    <section class="hero">
-      <div class="container hero-grid">
-
-        <div class="hero-copy">
-          <p class="kicker">Decision clarity for entrepreneurs &amp; SMBs — no dashboards, no jargon</p>
-
-          <h1 class="display">
-            Most business owners know something's off —
-            <span class="accent">but not exactly where it's leaking.</span>
-          </h1>
-
-          <p class="lead">
-            Decision clarity and execution guidance for entrepreneurs &amp; SMBs — without dashboards, jargon, or sensitive data. A few top-line inputs. One clear report: your real bottleneck, what to fix first, and how to execute over the next 180 days.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary btn-lg"
-               href="https://app.keldron.io"
-               onclick="posthog.capture('cta_clicked', {button: 'find_my_bottleneck', location: 'hero'})">
-              Find My Bottleneck — It's Free
-            </a>
-            <a class="btn btn-ghost btn-lg"
-               href="/sample-report.html"
-               onclick="posthog.capture('sample_report_viewed', {location: 'hero'})">
-              See a sample report
-            </a>
-          </div>
-
-          <p class="cta-subnote">Free to start • No calls • Get your report in minutes • No upselling</p>
-
-          <p class="reassurance">
-            Built by operators with 27+ years of experience in operations, supply chain, and growth strategy for founders and operators who need decision clarity fast — without weeks of consulting or complicated tooling.
-          </p>
-
-          <div class="trust-row">
-            <div class="trust-item">
-              <span class="trust-label">Built for</span>
-              <span class="trust-value">Retail • Logistics • Manufacturing • Services</span>
-            </div>
-            <div class="trust-item">
-              <span class="trust-label">Output</span>
-              <span class="trust-value">Practical actions + KPI framework</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-mock">
-          <div class="mock-card">
-            <div class="mock-top">
-              <span class="mock-dot"></span>
-              <span class="mock-dot"></span>
-              <span class="mock-dot"></span>
-              <span class="mock-title">Sample Keldron Report</span>
-            </div>
-            <img
-              src="assets/og-image.png"
-              alt="Sample Keldron report preview"
-              class="mock-image"
-              loading="lazy"
-            />
-            <div class="mock-foot">
-              <span>Executive Summary</span>
-              <span>Key Findings</span>
-              <span>Quick Wins</span>
-              <span>KPI Framework</span>
-              <a href="/sample-report.html"
-                 style="margin-left:auto; color: var(--gold); font-weight:600; text-decoration:none;"
-                 onclick="posthog.capture('sample_report_viewed', {location: 'hero_mock'})">
-                View full sample →
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ── WHY KELDRON ── -->
-    <section class="section" id="why">
-      <div class="container">
-        <h2 class="section-title">Why Keldron</h2>
-        <p class="section-intro">
-          You don't need another tool. You need to know what to fix first.
-          Here's how Keldron is different from everything else you've tried.
-        </p>
-
-        <div class="pillars" style="grid-template-columns: repeat(3, 1fr);">
-
-          <div class="pillar">
-            <div class="pillar-num">1</div>
-            <h3 class="pillar-title">Not another dashboard</h3>
-            <p class="pillar-text">No BI tools to wire up. No added complexity. Keldron focuses entirely on priorities and actions — not data visualisation.</p>
-          </div>
-
-          <div class="pillar">
-            <div class="pillar-num">2</div>
-            <h3 class="pillar-title">No sensitive data required</h3>
-            <p class="pillar-text">Most diagnostic tools need deep datasets. Keldron works from a few top-line questions to give you direction fast.</p>
-          </div>
-
-          <div class="pillar">
-            <div class="pillar-num">3</div>
-            <h3 class="pillar-title">Not generic advice</h3>
-            <p class="pillar-text">A structured output every time: Exec Summary • Root Causes • Recommendations • KPI Framework • 180-day plan.</p>
-          </div>
-
-          <div class="pillar">
-            <div class="pillar-num">4</div>
-            <h3 class="pillar-title">No consultant bottleneck</h3>
-            <p class="pillar-text">No meetings. No decks. No weeks of back-and-forth. Clarity in minutes, not months.</p>
-          </div>
-
-          <div class="pillar">
-            <div class="pillar-num">5</div>
-            <h3 class="pillar-title">Built for operators</h3>
-            <p class="pillar-text">Designed for founders and SMB owners who want clear next steps — written in plain language, not consultant jargon.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ── WHAT YOU GET ── -->
-    <section class="section section-dark" id="deliverable">
-      <div class="container">
-        <h2 class="section-title section-title-dark">What You Get</h2>
-        <p class="section-intro section-intro-dark">
-          A report you can use immediately — written for operators and founders.
-        </p>
-
-        <div class="deliverable-grid">
-          <div class="deliverable-item">
-            <div class="deliverable-icon">01</div>
-            <h3>Bottleneck</h3>
-            <p>The #1 constraint slowing output, growth, or cash.</p>
-          </div>
-
-          <div class="deliverable-item">
-            <div class="deliverable-icon">02</div>
-            <h3>Root Cause</h3>
-            <p>Why it's happening — and what's reinforcing it.</p>
-          </div>
-
-          <div class="deliverable-item">
-            <div class="deliverable-icon">03</div>
-            <h3>Top 3 Actions</h3>
-            <p>The highest-leverage next moves, in plain language.</p>
-          </div>
-
-          <div class="deliverable-item">
-            <div class="deliverable-icon">04</div>
-            <h3>Roadmap</h3>
-            <p>30–90 day plan + KPI framework to measure progress.</p>
-          </div>
-        </div>
-
-        <div class="dark-cta">
-          <a class="btn btn-primary btn-lg"
-             href="https://app.keldron.io"
-             onclick="posthog.capture('cta_clicked', {button: 'get_free_growth_report', location: 'deliverable'})">
-            Get My Free Growth Report
-          </a>
-          <p class="reassurance reassurance-dark">You'll see the report on screen + download options.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── HOW IT WORKS ── -->
-    <section class="section" id="how">
-      <div class="container">
-        <h2 class="section-title">How It Works</h2>
-        <p class="section-intro">Three steps. No calls. No messy setup.</p>
-
-        <div class="steps">
-          <div class="step">
-            <div class="step-badge">1</div>
-            <h3>Answer a few focused questions</h3>
-            <p>About your business, operations, and goals — designed for speed and clarity. No sensitive data required.</p>
-          </div>
-
-          <div class="step">
-            <div class="step-badge">2</div>
-            <h3>Keldron runs the diagnostic</h3>
-            <p>We detect constraints, root causes, and the best next actions based on your context.</p>
-          </div>
-
-          <div class="step">
-            <div class="step-badge">3</div>
-            <h3>Get a clear report</h3>
-            <p>View it instantly, download it, and use the KPI framework to track improvements over 180 days.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── FAQ ── -->
-    <section class="section" id="faq">
-      <div class="container">
-        <h2 class="section-title">FAQ</h2>
-
-        <div class="faq">
-          <details>
-            <summary>Is this actually free?</summary>
-            <div class="faq-content">
-              Yes. You can start free and generate your first analysis report without any calls.
-            </div>
-          </details>
-
-          <details>
-            <summary>What happens after I click the button?</summary>
-            <div class="faq-content">
-              You'll answer a short diagnostic, Keldron generates your report, and you can view it on-screen.
-              Download and email options are available inside the app.
-            </div>
-          </details>
-
-          <details>
-            <summary>Who is this for?</summary>
-            <div class="faq-content">
-              Entrepreneurs and SMBs in retail, logistics, manufacturing, and service businesses who need
-              decision clarity fast — especially around bottlenecks, leakage, and execution priorities.
-            </div>
-          </details>
-
-          <details>
-            <summary>Do I need to upload sensitive financial data?</summary>
-            <div class="faq-content">
-              No. Keldron works from a few top-line inputs — no sensitive data, no spreadsheet uploads, no accounting integrations required. Just what you already know about your business.
-            </div>
-          </details>
-
-          <details>
-            <summary>Can I see a sample report before I start?</summary>
-            <div class="faq-content">
-              Yes. <a href="/sample-report.html" style="border-bottom:1px solid currentColor;">View a real sample report here</a> — generated for a retail business, with identifying details removed.
-            </div>
-          </details>
-
-          <details>
-            <summary>Will someone call me?</summary>
-            <div class="faq-content">
-              No. Keldron is fully self-serve. You control the pace.
-            </div>
-          </details>
-
-          <details>
-            <summary>How do you handle my data?</summary>
-            <div class="faq-content">
-              We keep things minimal and purpose-driven. Read our <a href="privacy.html" style="border-bottom:1px solid currentColor;">Privacy Policy</a>.
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── CLOSING CTA ── -->
-    <section class="closing">
-      <div class="container closing-inner">
-        <h2 class="closing-title">Clear next steps. Plain language. No dashboards, no jargon, no sensitive data.</h2>
-        <p class="closing-text">A few questions. A structured report. Decision clarity in minutes.</p>
-        <a class="btn btn-primary btn-lg"
-           href="https://app.keldron.io"
-           onclick="posthog.capture('cta_clicked', {button: 'get_free_growth_report', location: 'closing'})">
-          Get My Free Growth Report
-        </a>
-        <p class="closing-signoff">— Keldron</p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <div class="footer-brand">Keldron</div>
-        </div>
-      <div class="footer-right">
-        <div class="footer-muted small">AI Decision Intelligence for Entrepreneurs &amp; SMBs</div>
-        <div class="footer-muted small">© <span id="year"></span> Keldron Inc.</div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
-</body>
-</html>
+           onclick="posthog.capture('cta_clicked', {button: 'find_my_bottleneck', location: 'contact_header'})">
+          Find My Bottleneck —
