@@ -3,70 +3,205 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy — Strata Growth Advisors</title>
-  <meta name="description" content="Privacy Policy for Strata Growth Advisors." />
-  <link rel="stylesheet" href="style.css" />
+
+  <title>Terms of Use | Keldron.io</title>
+  <meta name="description" content="Terms of Use for Keldron.io." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://keldron.io/terms.html" />
+  <link rel="icon" href="/assets/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#F7F9FC; --card:#FFFFFF; --text:#0B1220; --muted:#5B6577;
+      --border: rgba(15, 42, 68, 0.12);
+      --navy:#0F2A44; --blue:#2E6BFF; --blue2:#4F86FF;
+      --shadow:0 18px 50px rgba(15, 42, 68, 0.10);
+      --shadow2:0 10px 28px rgba(15, 42, 68, 0.08);
+      --max: 900px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 500px at 20% -10%, rgba(46, 107, 255, 0.20), transparent 60%),
+        radial-gradient(900px 450px at 80% 0%, rgba(15, 42, 68, 0.18), transparent 55%),
+        var(--bg);
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:var(--max); margin:0 auto; padding: 0 24px}
+    .header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(247,249,252,0.78);
+      border-bottom: 1px solid rgba(15, 42, 68, 0.08);
+    }
+    .headerInner{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+    }
+    .brand{display:flex; align-items:center; gap:12px}
+    .brandText{display:flex; flex-direction:column; line-height:1.1}
+    .brandName{font-weight:700; font-size:16px}
+    .brandTag{font-size:12px; color:var(--muted)}
+    .btn{
+      border:1px solid var(--border);
+      background: var(--card);
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-weight:600;
+      font-size:13px;
+      cursor:pointer;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+      transition: transform 120ms ease, box-shadow 120ms ease;
+      user-select:none;
+      display:inline-flex; align-items:center; gap:8px;
+    }
+    .btn:hover{transform: translateY(-1px); box-shadow: var(--shadow2)}
+    .btnPrimary{
+      border-color: rgba(46,107,255,0.35);
+      background: linear-gradient(135deg, var(--blue), var(--blue2));
+      color:white;
+      box-shadow: 0 16px 40px rgba(46,107,255,0.25);
+    }
+    main{padding: 44px 0 70px}
+    .card{
+      background: rgba(255,255,255,0.80);
+      border: 1px solid rgba(15,42,68,0.10);
+      border-radius: 24px;
+      box-shadow: var(--shadow2);
+      padding: 26px;
+    }
+    h1{margin:0 0 8px; font-size:34px; letter-spacing:-0.4px}
+    .meta{margin:0 0 18px; color:var(--muted); font-size:13px; line-height:1.6}
+    h2{margin:22px 0 10px; font-size:18px}
+    p, li{color:var(--muted); line-height:1.75; font-size:14px}
+    ul{margin:10px 0 0 18px}
+    .divider{height:1px; background: rgba(15,42,68,0.10); margin:18px 0}
+    footer{
+      padding: 26px 0 34px;
+      border-top: 1px solid rgba(15,42,68,0.08);
+      color: var(--muted);
+      font-size:12px;
+    }
+    .footerRow{display:flex; flex-direction:column; gap:10px}
+    @media(min-width:720px){
+      .footerRow{flex-direction:row; align-items:center; justify-content:space-between}
+    }
+    .links{display:flex; gap:12px; flex-wrap:wrap}
+    .links a:hover{color:var(--text)}
+    code{
+      background: rgba(15,42,68,0.06);
+      padding: 2px 6px;
+      border-radius: 8px;
+      color: var(--navy);
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/">
-        <img src="assets/strata-logo.png" alt="Strata Growth Advisors" class="brand-mark" />
-      </a>
-      <div class="header-cta">
-        <a class="btn btn-primary" href="LOVEABLE_APP_URL">Find My Biggest Bottleneck</a>
+  <header class="header">
+    <div class="container">
+      <div class="headerInner">
+        <a href="/" class="brand" aria-label="Keldron.io">
+          <img
+            src="/assets/keldron_with_tagline.png"
+            alt="Keldron"
+            style="height:40px; width:auto; display:block;"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="brandText" style="display:none;">
+            <div class="brandName">Keldron.io</div>
+            <div class="brandTag">AI Decision Intelligence for SMBs</div>
+          </div>
+        </a>
+
+        <a class="btn btnPrimary" href="/">Back to Home</a>
       </div>
     </div>
   </header>
 
-  <main class="section">
+  <main>
     <div class="container">
-      <h1 class="section-title">Privacy Policy</h1>
-      <p class="section-intro">
-        We collect only what’s needed to provide your report and improve the product. We do not sell personal data.
-      </p>
+      <div class="card">
+        <h1>Terms of Use</h1>
+        <p class="meta">
+          Effective date: <strong>February 18, 2026</strong><br/>
+          These Terms govern use of the Keldron.io marketing website (<code>keldron.io</code>).
+        </p>
 
-      <div class="faq">
-        <details open>
-          <summary>What we collect</summary>
-          <div class="faq-content">
-            Basic account information (if you create an account) and the business inputs you submit for analysis.
-          </div>
-        </details>
+        <div class="divider"></div>
 
-        <details>
-          <summary>How we use it</summary>
-          <div class="faq-content">
-            To generate your analysis report, provide download/email delivery, and improve report quality over time.
-          </div>
-        </details>
+        <h2>1) Use of the website</h2>
+        <p>
+          You may use this website for lawful purposes only. You agree not to misuse the site, attempt unauthorized access,
+          disrupt service, or interfere with other users.
+        </p>
 
-        <details>
-          <summary>Analytics</summary>
-          <div class="faq-content">
-            We use analytics to understand how the website and app are used (e.g., page views, clicks, conversions).
-          </div>
-        </details>
+        <h2>2) No professional advice</h2>
+        <p>
+          Content on this marketing website is provided for general informational purposes. It is not legal, financial, tax,
+          or professional advice. You are responsible for decisions you make based on any information provided.
+        </p>
 
-        <details>
-          <summary>Contact</summary>
-          <div class="faq-content">
-            If you have questions, contact us via the details listed on the website.
-          </div>
-        </details>
+        <h2>3) Diagnostic application</h2>
+        <p>
+          The diagnostic experience may be hosted separately. When you access the diagnostic application via a link from this site,
+          additional terms and notices may apply within that experience.
+        </p>
+
+        <h2>4) Intellectual property</h2>
+        <p>
+          The website, brand, and all related content are owned by GlobalBridge Solutions LLC (operating as Keldron.io) or its
+          licensors and are protected by applicable intellectual property laws. You may not copy, reproduce, or distribute
+          content without permission.
+        </p>
+
+        <h2>5) Third-party services and links</h2>
+        <p>
+          This website may reference third-party services (such as analytics providers) or link to external sites. We are not
+          responsible for third-party content, policies, or practices.
+        </p>
+
+        <h2>6) Disclaimers</h2>
+        <p>
+          The website is provided "as is" and "as available." We do not guarantee the website will be uninterrupted, error-free,
+          or free of harmful components.
+        </p>
+
+        <h2>7) Limitation of liability</h2>
+        <p>
+          To the fullest extent permitted by law, GlobalBridge Solutions LLC (operating as Keldron.io) will not be liable for
+          indirect, incidental, special, consequential, or punitive damages arising from your use of (or inability to use)
+          the website.
+        </p>
+
+        <h2>8) Changes to these terms</h2>
+        <p>
+          We may update these Terms from time to time. The "Effective date" above indicates the latest revision.
+        </p>
+
+        <h2>9) Contact</h2>
+        <p>
+          Questions about these Terms? Contact <a href="mailto:hello@keldron.io" style="border-bottom:1px solid currentColor;">hello@keldron.io</a>.
+        </p>
       </div>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <div class="footer-brand">Strata Growth Advisors</div>
-        <div class="footer-muted">Strategy built. Growth delivered.</div>
-      </div>
-      <div class="footer-right">
-        <div class="footer-muted small">AI Decision Intelligence for SMEs</div>
-        <div class="footer-muted small">© <span id="year"></span> Strata Growth Advisors</div>
+  <footer>
+    <div class="container">
+      <div class="footerRow">
+        <div>© <span id="year"></span> Strata Growth Advisors &nbsp;·&nbsp; Operating as Keldron.io. All rights reserved.</div>
+        <div class="links">
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+          <a href="mailto:hello@keldron.io">Contact</a>
+        </div>
       </div>
     </div>
   </footer>
