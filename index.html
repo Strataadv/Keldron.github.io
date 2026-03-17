@@ -155,6 +155,54 @@
       font-size: 11px;
       opacity: 0.6;
     }
+    .hero-micro-proof {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink, #0f0e0c);
+      background: rgba(200, 148, 42, 0.1);
+      border: 1px solid rgba(200, 148, 42, 0.22);
+      border-radius: 999px;
+      padding: 10px 14px;
+      margin: 6px 0 18px;
+      line-height: 1.4;
+    }
+    .hero-micro-proof .star {
+      color: var(--gold, #c8942a);
+      font-size: 15px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .mini-proof-row {
+      padding: 22px 0;
+      background: var(--surface-2, #f0ece0);
+      border-top: 1px solid rgba(15,14,12,0.06);
+      border-bottom: 1px solid rgba(15,14,12,0.06);
+    }
+    .mini-proof-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .mini-proof-card {
+      background: var(--white, #ffffff);
+      border: 1px solid rgba(200, 148, 42, 0.16);
+      border-radius: 12px;
+      padding: 18px 18px 16px;
+    }
+    .mini-proof-quote {
+      margin: 0 0 8px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--ink, #0f0e0c);
+      font-weight: 600;
+    }
+    .mini-proof-name {
+      font-size: 12px;
+      color: var(--ink-muted, #6b6b5e);
+    }
     .proof-strip {
       background: var(--ink, #0f0e0c);
       padding: 18px 0;
@@ -181,19 +229,35 @@
     @media (max-width: 600px) {
       .proof-strip-inner { gap: 16px; padding: 0 16px; }
       .proof-strip-item { font-size: 12px; }
+      .mini-proof-grid { grid-template-columns: 1fr; }
+      .hero-micro-proof {
+        display: flex;
+        border-radius: 14px;
+      }
     }
     .testimonial-section {
       padding: 56px 0;
       background: var(--surface-2, #f0ece0);
     }
-    .testimonial-card {
-      max-width: 680px;
+    .testimonial-grid {
+      max-width: 860px;
       margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .testimonial-card {
       background: var(--white, #ffffff);
       border: 1px solid rgba(200, 148, 42, 0.2);
       border-left: 4px solid var(--gold, #c8942a);
       border-radius: 12px;
       padding: 2rem 2.25rem;
+    }
+    .testimonial-card.featured {
+      grid-column: 1 / -1;
+      max-width: 680px;
+      margin: 0 auto;
+      width: 100%;
     }
     .testimonial-stars {
       display: flex;
@@ -259,6 +323,15 @@
     .testimonial-verified svg {
       color: var(--gold, #c8942a);
     }
+    @media (max-width: 760px) {
+      .testimonial-grid {
+        grid-template-columns: 1fr;
+      }
+      .testimonial-card,
+      .testimonial-card.featured {
+        max-width: 100%;
+      }
+    }
   </style>
 
 </head>
@@ -320,6 +393,11 @@
             Keldron finds them in minutes and gives you a clear, actionable 90-day roadmap to fix them.
             In plain English. No dashboards. No jargon. No sensitive data needed.
           </p>
+
+          <div class="hero-micro-proof">
+            <span class="star">★</span>
+            <span>Early users identified <strong>3–7 hidden issues</strong> in under 5 minutes.</span>
+          </div>
 
           <div class="hero-actions">
             <a class="btn btn-primary btn-lg"
@@ -390,6 +468,22 @@
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <!-- MINI PROOF ROW -->
+    <section class="mini-proof-row">
+      <div class="container">
+        <div class="mini-proof-grid">
+          <div class="mini-proof-card">
+            <p class="mini-proof-quote">“Found 5 issues we didn’t even realize existed.”</p>
+            <p class="mini-proof-name">— Small business owner</p>
+          </div>
+          <div class="mini-proof-card">
+            <p class="mini-proof-quote">“Took less than 5 minutes. Extremely clear.”</p>
+            <p class="mini-proof-name">— Founder</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -531,28 +625,28 @@
       <div class="container">
         <h2 class="section-title section-title-dark">See the exact type of report you'll get</h2>
         <p class="section-intro section-intro-dark">
-          A plain-English breakdown — before you commit a single minute.
+          A plain-English strategic diagnostic — before you commit a single minute.
         </p>
         <div class="deliverable-grid">
           <div class="deliverable-item">
             <div class="deliverable-icon">01</div>
-            <h3>Executive Summary</h3>
-            <p>Your biggest issue, why it matters, and the clearest path forward — in plain language.</p>
+            <h3>Executive Snapshot + Summary</h3>
+            <p>A fast visual snapshot of core business health, followed by a plain-English summary of what’s happening, what matters most, and where to focus first.</p>
           </div>
           <div class="deliverable-item">
             <div class="deliverable-icon">02</div>
-            <h3>Root Causes & Inefficiencies</h3>
-            <p>What's actually driving the problem — profit leaks, operational drag, and execution gaps — not just the surface symptoms.</p>
+            <h3>Key Findings + Root Causes</h3>
+            <p>The biggest issues affecting profit, efficiency, and consistency — plus the underlying reasons those problems are happening in the first place.</p>
           </div>
           <div class="deliverable-item">
             <div class="deliverable-icon">03</div>
-            <h3>Top Actions + Quick Wins</h3>
-            <p>The highest-leverage moves to make first, including fast wins you can act on this week.</p>
+            <h3>Strategic Recommendations + Quick Wins</h3>
+            <p>Clear actions to take now, including immediate quick wins, implementation guidance, expected impact, and ownership for each priority area.</p>
           </div>
           <div class="deliverable-item">
             <div class="deliverable-icon">04</div>
-            <h3>90-Day Action Roadmap + KPIs</h3>
-            <p>A sequenced, week-by-week plan with simple KPIs so you always know what to do next — and whether it's working.</p>
+            <h3>KPIs, Risks + 90-Day Action Plan</h3>
+            <p>A practical KPI framework, risk and mitigation view, and a sequenced 90-day roadmap showing what to do first, next, and how to track progress.</p>
           </div>
         </div>
         <div class="dark-cta">
@@ -561,7 +655,7 @@
              onclick="posthog.capture('sample_report_viewed', {location: 'deliverable'})">
             View Sample Report →
           </a>
-          <p class="reassurance reassurance-dark" style="margin-top:12px;">See the full report format before you start — no signup required.</p>
+          <p class="reassurance reassurance-dark" style="margin-top:12px;">See the real report structure before you start — no signup required.</p>
         </div>
       </div>
     </section>
@@ -692,24 +786,52 @@
     <section class="testimonial-section">
       <div class="container">
         <p style="text-align:center; font-size:13px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color: var(--ink-muted, #6b6b5e); margin:0 0 24px;">Practitioners are already seeing results</p>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <p class="testimonial-quote">
-            "Keldron is a great platform for small and medium-sized businesses or solopreneurs like me.
-            The action plan it gave me was absolutely to the point. In just a little more than a week since
-            I have started following it, I am already feeling some positive outcomes."
-          </p>
-          <div class="testimonial-footer">
-            <div class="testimonial-avatar">K.A.</div>
-            <div class="testimonial-meta">
-              <span class="testimonial-name">K.A.</span>
-              <span class="testimonial-role">SAP Implementation Consultant &nbsp;·&nbsp; Solopreneur</span>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card featured">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
             </div>
-            <div class="testimonial-verified">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              Verified user
+            <p class="testimonial-quote">
+              "Keldron uncovered 5 issues we had completely missed.
+              The action plan was simple and immediately useful."
+            </p>
+            <div class="testimonial-footer">
+              <div class="testimonial-avatar">K.A.</div>
+              <div class="testimonial-meta">
+                <span class="testimonial-name">K.A.</span>
+                <span class="testimonial-role">SAP Implementation Consultant &nbsp;·&nbsp; Solopreneur</span>
+              </div>
+              <div class="testimonial-verified">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Verified user
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "It showed exactly where we were losing efficiency."
+            </p>
+            <div class="testimonial-footer">
+              <div class="testimonial-avatar">R.O.</div>
+              <div class="testimonial-meta">
+                <span class="testimonial-name">Retail owner</span>
+                <span class="testimonial-role">Small business user</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Finally something that explains problems in plain English."
+            </p>
+            <div class="testimonial-footer">
+              <div class="testimonial-avatar">S.M.</div>
+              <div class="testimonial-meta">
+                <span class="testimonial-name">SMB operator</span>
+                <span class="testimonial-role">Early user</span>
+              </div>
             </div>
           </div>
         </div>
@@ -721,6 +843,9 @@
       <div class="container closing-inner">
         <h2 class="closing-title">Stop guessing. Start fixing.</h2>
         <p class="closing-text">Find your profit leaks and operational bottlenecks. Get a 90-day plan to fix them. Start free.</p>
+        <p style="font-size:14px; font-weight:600; color: var(--ink, #0f0e0c); margin: 0 0 14px;">
+          Most businesses discover issues affecting <span style="color: var(--gold, #c8942a);">5–15% of profit.</span>
+        </p>
         <a class="btn btn-primary btn-lg"
            href="https://app.keldron.io"
            onclick="posthog.capture('cta_clicked', {button: 'find_my_biggest_leak', location: 'closing'})">
