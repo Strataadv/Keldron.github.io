@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Keldron — Identify Your Primary Constraint & Reduce Margin Erosion</title>
-  <meta name="description" content="Keldron identifies your primary operational constraint, sources of margin erosion, and performance gaps — then gives you a clear 90-day action roadmap. No dashboards. No jargon. No sensitive data." />
+  <meta name="description" content="Keldron helps owner-led businesses identify the primary constraint affecting performance, uncover sources of margin erosion, and clarify where to focus first — without dashboards, jargon, or sensitive data." />
   <meta name="theme-color" content="#f6f1e6" />
   <link rel="icon" href="assets/favicon.ico" />
   <link rel="stylesheet" href="style.css" />
@@ -52,7 +52,7 @@
         "name": "Who gets the most value from Keldron?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Owner-led businesses that know profit, growth, or operations are underperforming — but don't yet know the primary reason. If results feel weaker than the effort going in, Keldron is built for you."
+          "text": "Owner-led businesses that know profit, growth, or operations are underperforming — but do not yet know the primary reason. If results feel weaker than the effort going in, Keldron is built for you."
         }
       },
       {
@@ -68,7 +68,7 @@
         "name": "Is this accounting software?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Keldron is not a dashboard or bookkeeping tool. It identifies your primary operational constraint, sources of margin erosion, and performance gaps — then gives you a 90-day roadmap to act on them."
+          "text": "No. Keldron is not a dashboard or bookkeeping tool. It helps you identify the primary constraint affecting performance, uncover sources of margin erosion, and clarify where management attention should go first."
         }
       },
       {
@@ -106,234 +106,6 @@
     ]
   }
   </script>
-
-  <style>
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      background: rgba(200, 148, 42, 0.12);
-      border: 1px solid rgba(200, 148, 42, 0.3);
-      color: var(--gold, #c8942a);
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      padding: 5px 12px;
-      border-radius: 100px;
-      margin-bottom: 18px;
-      width: fit-content;
-    }
-    .hero-badge-dot {
-      width: 6px;
-      height: 6px;
-      background: var(--gold, #c8942a);
-      border-radius: 50%;
-      animation: badgepulse 2s ease-in-out infinite;
-      flex-shrink: 0;
-    }
-    @keyframes badgepulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
-    }
-    .hero-bridge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 13px;
-      color: var(--ink-muted, #6b6b5e);
-      margin-top: 10px;
-      text-decoration: none;
-      border-bottom: 1px dashed rgba(107,107,94,0.4);
-      transition: color 0.2s, border-color 0.2s;
-    }
-    .hero-bridge:hover {
-      color: var(--ink, #0f0e0c);
-      border-bottom-color: var(--ink, #0f0e0c);
-    }
-    .hero-bridge-arrow {
-      font-size: 11px;
-      opacity: 0.6;
-    }
-    .hero-micro-proof {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--ink, #0f0e0c);
-      background: rgba(200, 148, 42, 0.1);
-      border: 1px solid rgba(200, 148, 42, 0.22);
-      border-radius: 999px;
-      padding: 10px 14px;
-      margin: 6px 0 18px;
-      line-height: 1.4;
-    }
-    .hero-micro-proof .star {
-      color: var(--gold, #c8942a);
-      font-size: 15px;
-      line-height: 1;
-      flex-shrink: 0;
-    }
-    .mini-proof-row {
-      padding: 22px 0;
-      background: var(--surface-2, #f0ece0);
-      border-top: 1px solid rgba(15,14,12,0.06);
-      border-bottom: 1px solid rgba(15,14,12,0.06);
-    }
-    .mini-proof-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-    }
-    .mini-proof-card {
-      background: var(--white, #ffffff);
-      border: 1px solid rgba(200, 148, 42, 0.16);
-      border-radius: 12px;
-      padding: 18px 18px 16px;
-    }
-    .mini-proof-quote {
-      margin: 0 0 8px;
-      font-size: 15px;
-      line-height: 1.6;
-      color: var(--ink, #0f0e0c);
-      font-weight: 600;
-    }
-    .mini-proof-name {
-      font-size: 12px;
-      color: var(--ink-muted, #6b6b5e);
-    }
-    .proof-strip {
-      background: var(--ink, #0f0e0c);
-      padding: 18px 0;
-    }
-    .proof-strip-inner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-    .proof-strip-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-      color: rgba(255,255,255,0.55);
-      white-space: nowrap;
-    }
-    .proof-strip-item svg {
-      flex-shrink: 0;
-      color: var(--gold, #c8942a);
-    }
-    @media (max-width: 600px) {
-      .proof-strip-inner { gap: 16px; padding: 0 16px; }
-      .proof-strip-item { font-size: 12px; }
-      .mini-proof-grid { grid-template-columns: 1fr; }
-      .hero-micro-proof {
-        display: flex;
-        border-radius: 14px;
-      }
-    }
-    .testimonial-section {
-      padding: 56px 0;
-      background: var(--surface-2, #f0ece0);
-    }
-    .testimonial-grid {
-      max-width: 860px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
-    .testimonial-card {
-      background: var(--white, #ffffff);
-      border: 1px solid rgba(200, 148, 42, 0.2);
-      border-left: 4px solid var(--gold, #c8942a);
-      border-radius: 12px;
-      padding: 2rem 2.25rem;
-    }
-    .testimonial-card.featured {
-      grid-column: 1 / -1;
-      max-width: 680px;
-      margin: 0 auto;
-      width: 100%;
-    }
-    .testimonial-stars {
-      display: flex;
-      gap: 3px;
-      margin-bottom: 1rem;
-    }
-    .testimonial-stars span {
-      color: var(--gold, #c8942a);
-      font-size: 16px;
-    }
-    .testimonial-quote {
-      font-size: clamp(15px, 2vw, 17px);
-      line-height: 1.75;
-      color: var(--ink, #0f0e0c);
-      font-style: italic;
-      margin: 0 0 1.5rem;
-    }
-    .testimonial-footer {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .testimonial-avatar {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: rgba(200, 148, 42, 0.15);
-      border: 1px solid rgba(200, 148, 42, 0.3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--gold, #c8942a);
-      flex-shrink: 0;
-      font-style: normal;
-    }
-    .testimonial-meta {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-    .testimonial-name {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--ink, #0f0e0c);
-      font-style: normal;
-    }
-    .testimonial-role {
-      font-size: 12px;
-      color: var(--ink-muted, #6b6b5e);
-      font-style: normal;
-    }
-    .testimonial-verified {
-      margin-left: auto;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 11px;
-      color: var(--ink-muted, #6b6b5e);
-      font-style: normal;
-    }
-    .testimonial-verified svg {
-      color: var(--gold, #c8942a);
-    }
-    @media (max-width: 760px) {
-      .testimonial-grid {
-        grid-template-columns: 1fr;
-      }
-      .testimonial-card,
-      .testimonial-card.featured {
-        max-width: 100%;
-      }
-    }
-  </style>
-
 </head>
 
 <body>
@@ -384,21 +156,25 @@
           <p class="kicker">AI-powered decision intelligence for owner-led businesses</p>
 
           <h1 class="display">
-            You already know something is off.
-            <span class="accent">Keldron helps you see what it is.</span>
+            Something in your business feels off.
+            <span class="accent">But the underlying issue is still unclear.</span>
           </h1>
 
           <p class="lead">
-            If revenue is moving but margins still feel thin, or the team is busy but results still feel underpowered,
-            the issue is rarely random. There is usually a primary operational constraint, a few overlooked performance gaps,
-            and quiet sources of margin erosion hiding underneath day-to-day activity.
-            Keldron helps you identify them in minutes and gives you a clear 90-day action roadmap.
-            In plain English. No dashboards. No jargon. No sensitive data needed.
+            Revenue may be coming in. The team may be working hard. Yet margins feel thinner than they should,
+            performance feels less consistent than expected, and improvement never seems proportional to the effort going in.
+          </p>
+
+          <p class="lead" style="margin-top:16px;">
+            That is often not just an execution issue. It is a diagnosis issue.
+            Keldron helps you identify the primary constraint affecting performance, uncover sources of margin erosion,
+            and clarify where management attention should go first — in plain English, with no jargon, no spreadsheets,
+            and no sensitive data required.
           </p>
 
           <div class="hero-micro-proof">
             <span class="star">★</span>
-            <span>Early users identified <strong>3–7 hidden performance issues</strong> in under 5 minutes.</span>
+            <span>Early users surfaced <strong>underlying issues and overlooked performance gaps</strong> they were not actively tracking.</span>
           </div>
 
           <div class="hero-actions">
@@ -420,11 +196,11 @@
             <span class="hero-bridge-arrow">→</span>
           </a>
 
-          <p class="cta-subnote" style="margin-top: 16px;">3 minutes &nbsp;·&nbsp; No calls &nbsp;·&nbsp; No spreadsheet uploads &nbsp;·&nbsp; Instant report</p>
+          <p class="cta-subnote">3 minutes &nbsp;·&nbsp; No calls &nbsp;·&nbsp; No spreadsheet uploads &nbsp;·&nbsp; Instant report</p>
 
           <p class="reassurance">
             Built by an operator with 27+ years across manufacturing, retail, distribution, and supply chain —
-            for founders and SMB owners who need decision clarity fast.
+            for founders and SMB owners who need decision clarity before making the next move.
           </p>
 
           <div class="trust-row">
@@ -433,8 +209,8 @@
               <span class="trust-value">Retail &nbsp;·&nbsp; Distribution &nbsp;·&nbsp; Services &nbsp;·&nbsp; Manufacturing</span>
             </div>
             <div class="trust-item">
-              <span class="trust-label">Output</span>
-              <span class="trust-value">Constraint diagnosis + margin erosion analysis + 90-day action roadmap</span>
+              <span class="trust-label">Helps you identify</span>
+              <span class="trust-value">Primary constraint + margin erosion + first-priority focus areas</span>
             </div>
           </div>
         </div>
@@ -449,13 +225,13 @@
             </div>
             <div style="position:relative; overflow:hidden; aspect-ratio:1920/1080; border-radius:8px;">
               <iframe
-  src="https://share.synthesia.io/embeds/videos/dbdabe3f-1d3c-4bf3-8dc3-3fba12c166be"
-  loading="lazy"
-  title="Keldron — Identify Your Primary Constraint"
-  allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-  allowfullscreen
-  style="position:absolute; width:100%; height:100%; top:0; left:0; border:none;">
-</iframe>
+                src="https://share.synthesia.io/embeds/videos/dbdabe3f-1d3c-4bf3-8dc3-3fba12c166be"
+                loading="lazy"
+                title="Keldron — Identify Your Primary Constraint"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                allowfullscreen
+                style="position:absolute; width:100%; height:100%; top:0; left:0; border:none;">
+              </iframe>
             </div>
             <div class="mock-foot">
               <span>45 seconds</span>
@@ -511,24 +287,75 @@
       </div>
     </div>
 
-    <!-- PAIN STRIP -->
-    <section class="section" id="pain" style="padding-top:40px; padding-bottom:40px; background: var(--surface-2, #f0ece0);">
+    <!-- CONVERSATION SECTION -->
+    <section class="conversation-section">
       <div class="container">
-        <p style="text-align:center; font-size:15px; color: var(--ink-muted, #6b6b5e); margin:0 0 28px; font-style:italic;">
-          If any of this sounds familiar, start here:
+        <div class="conversation-wrap">
+          <h2 class="section-title">Most businesses do not struggle because of effort.</h2>
+          <p class="section-intro">They struggle because management attention is focused on the wrong issue.</p>
+
+          <div class="conversation-copy">
+            <p>When performance feels off, the natural response is to act.</p>
+            <p>Increase sales activity. Adjust pricing. Tighten operations. Add more tracking. Introduce another system.</p>
+            <p>And for a moment, things may appear to improve.</p>
+            <p>But when the diagnosis is wrong, more effort does not resolve the issue. It simply makes the business busier, heavier, and more complex.</p>
+            <p class="conversation-highlight">That is why many businesses keep working harder without seeing the result they expected.</p>
+            <p>Keldron exists to help you pause, identify what is actually driving underperformance, and focus on the issue that matters most before investing more time, money, or energy into the wrong response.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON STRIP -->
+    <section class="comparison-strip">
+      <div class="container">
+        <h2 class="section-title">Dashboards show what is happening. Keldron helps you understand what is causing it.</h2>
+        <p class="section-intro" style="max-width:760px;">
+          Software can help you manage operations. But before you add more systems, more process, or more pressure,
+          you need clarity on the underlying issue affecting performance.
+        </p>
+
+        <div class="comparison-grid">
+          <div class="comparison-card">
+            <h3>What most businesses do</h3>
+            <ul>
+              <li>Track more numbers</li>
+              <li>Push teams harder</li>
+              <li>Add more tools or process</li>
+              <li>Respond to visible symptoms</li>
+            </ul>
+          </div>
+          <div class="comparison-card">
+            <h3>What Keldron helps you do</h3>
+            <ul>
+              <li>Identify the primary constraint</li>
+              <li>Surface sources of margin erosion</li>
+              <li>Understand likely root causes</li>
+              <li>Clarify first-priority focus areas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAIN STRIP -->
+    <section class="section" id="pain" style="padding-top:40px; padding-bottom:40px; background: rgba(255,255,255,0.12);">
+      <div class="container">
+        <p style="text-align:center; font-size:15px; color: rgba(17,17,17,0.62); margin:0 0 28px; font-style:italic;">
+          If any of this sounds familiar, Keldron is built for you:
         </p>
         <div class="pillars" style="grid-template-columns: repeat(2, 1fr);">
-          <div class="pillar" style="border-left: 3px solid var(--gold, #c8942a); padding-left: 20px;">
-            <p class="pillar-text" style="margin:0;">Sales are coming in, but margins still feel weaker than they should</p>
+          <div class="pillar" style="border-left: 3px solid var(--gold); padding-left: 20px;">
+            <p class="pillar-text" style="margin:0;">Sales are coming in, but profit is not improving the way it should</p>
           </div>
-          <div class="pillar" style="border-left: 3px solid var(--gold, #c8942a); padding-left: 20px;">
-            <p class="pillar-text" style="margin:0;">Operations feel heavier and busier than the output justifies</p>
+          <div class="pillar" style="border-left: 3px solid var(--gold); padding-left: 20px;">
+            <p class="pillar-text" style="margin:0;">The team is busy, but output still feels underpowered</p>
           </div>
-          <div class="pillar" style="border-left: 3px solid var(--gold, #c8942a); padding-left: 20px;">
-            <p class="pillar-text" style="margin:0;">You know performance is being held back — but not what to address first</p>
+          <div class="pillar" style="border-left: 3px solid var(--gold); padding-left: 20px;">
+            <p class="pillar-text" style="margin:0;">Problems keep repeating, but the root cause is still unclear</p>
           </div>
-          <div class="pillar" style="border-left: 3px solid var(--gold, #c8942a); padding-left: 20px;">
-            <p class="pillar-text" style="margin:0;">You want a clear 90-day action plan, not another dashboard</p>
+          <div class="pillar" style="border-left: 3px solid var(--gold); padding-left: 20px;">
+            <p class="pillar-text" style="margin:0;">You do not need more dashboards — you need clarity on what to address first</p>
           </div>
         </div>
       </div>
@@ -571,20 +398,20 @@
     </section>
 
     <!-- FOUNDER QUOTE -->
-    <section class="section" style="padding-top:56px; padding-bottom:56px; background: var(--surface-2, #f0ece0);">
+    <section class="section" style="padding-top:56px; padding-bottom:56px; background: rgba(255,255,255,0.12);">
       <div class="container" style="max-width:680px; text-align:center;">
-        <div style="font-size:56px; color: var(--gold, #c8942a); line-height:1; margin-bottom:8px;">"</div>
-        <blockquote style="margin:0 0 28px; font-size:clamp(16px,2.5vw,20px); color: var(--ink, #0f0e0c); line-height:1.75; font-style:italic;">
+        <div style="font-size:56px; color: var(--gold); line-height:1; margin-bottom:8px;">"</div>
+        <blockquote style="margin:0 0 28px; font-size:clamp(16px,2.5vw,20px); color: var(--ink); line-height:1.75; font-style:italic;">
           In 27 years running operations and supply chains across manufacturing, retail, and distribution,
           I watched smart business owners make expensive decisions with incomplete visibility — not because
-          they lacked capability, but because they had no fast way to identify the real constraint underneath
-          the symptoms. Keldron is what I wished they had.
+          they lacked capability, but because they had no fast way to identify the primary constraint underneath
+          visible symptoms. Keldron is what I wished they had.
         </blockquote>
         <div style="display:flex; align-items:center; justify-content:center; gap:14px;">
           <img src="/assets/taufiq.jpg" alt="Taufiqur Rahman" style="width:48px; height:48px; border-radius:50%; object-fit:cover; flex-shrink:0;" />
           <div style="text-align:left;">
-            <p style="margin:0; font-size:14px; font-weight:700; color: var(--ink, #0f0e0c);">Taufiqur Rahman</p>
-            <p style="margin:0; font-size:12px; color: var(--ink-muted, #6b6b5e);">Founder &amp; CEO, Keldron.io &nbsp;·&nbsp; 27 years in operations, supply chain &amp; growth</p>
+            <p style="margin:0; font-size:14px; font-weight:700; color: var(--ink);">Taufiqur Rahman</p>
+            <p style="margin:0; font-size:12px; color: rgba(17,17,17,0.62);">Founder &amp; CEO, Keldron.io &nbsp;·&nbsp; 27 years in operations, supply chain &amp; growth</p>
           </div>
         </div>
       </div>
@@ -593,30 +420,30 @@
     <!-- WHAT KELDRON HELPS YOU SPOT -->
     <section class="section" id="why">
       <div class="container">
-        <h2 class="section-title">What Keldron helps you see clearly</h2>
+        <h2 class="section-title">What Keldron helps you identify first</h2>
         <p class="section-intro">
-          No jargon. No complex setup. Just a clear diagnosis and a 90-day plan to act on it.
+          No jargon. No complex setup. Just clarity on what is actually affecting performance — and where to focus first.
         </p>
         <div class="pillars" style="grid-template-columns: repeat(2, 1fr);">
           <div class="pillar">
-            <div class="pillar-num">🔍</div>
-            <h3 class="pillar-title">Sources of margin erosion</h3>
-            <p class="pillar-text">Pricing gaps, dead stock, process waste, and execution drag that quietly reduce margin month after month.</p>
-          </div>
-          <div class="pillar">
-            <div class="pillar-num">⚙️</div>
-            <h3 class="pillar-title">Operational inefficiencies</h3>
-            <p class="pillar-text">The workflows, handoffs, and capacity drains slowing the business down and consuming more effort than they should.</p>
-          </div>
-          <div class="pillar">
             <div class="pillar-num">🎯</div>
             <h3 class="pillar-title">Your primary constraint</h3>
-            <p class="pillar-text">The core issue limiting performance, output, cash flow, or growth — not just the symptoms around it.</p>
+            <p class="pillar-text">The core issue most likely limiting performance, margin, output, or growth — not just the symptoms around it.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-num">🔍</div>
+            <h3 class="pillar-title">Sources of margin erosion</h3>
+            <p class="pillar-text">Pricing gaps, process drag, dead stock, inefficiencies, and execution weaknesses that quietly reduce profitability.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-num">⚠️</div>
+            <h3 class="pillar-title">Performance gaps that are easy to miss</h3>
+            <p class="pillar-text">The overlooked frictions, workflow issues, and cross-functional gaps that keep results weaker than the effort going in.</p>
           </div>
           <div class="pillar">
             <div class="pillar-num">🗓️</div>
-            <h3 class="pillar-title">A clear 90-day action roadmap</h3>
-            <p class="pillar-text">Sequenced, practical actions showing what to address first, what comes next, and how to measure progress.</p>
+            <h3 class="pillar-title">First-priority focus areas</h3>
+            <p class="pillar-text">A clear view of what should be addressed first over the next 90 days, so management attention goes in the right order.</p>
           </div>
         </div>
       </div>
@@ -625,30 +452,30 @@
     <!-- WHAT YOU GET -->
     <section class="section section-dark" id="deliverable">
       <div class="container">
-        <h2 class="section-title section-title-dark">See the exact type of report you'll get</h2>
+        <h2 class="section-title section-title-dark">What the diagnostic reveals</h2>
         <p class="section-intro section-intro-dark">
-          A plain-English structured diagnostic — before you commit a single minute.
+          A plain-English decision diagnostic that shows what is likely going wrong, why it matters, and where management attention should go first.
         </p>
         <div class="deliverable-grid">
           <div class="deliverable-item">
             <div class="deliverable-icon">01</div>
-            <h3>Executive Snapshot + Summary</h3>
-            <p>A fast visual view of core business health, followed by a plain-English summary of what’s happening, what matters most, and where to focus first.</p>
+            <h3>Primary Constraint</h3>
+            <p>The issue most likely limiting performance, margin, consistency, or growth — so you can stop guessing where the real issue is.</p>
           </div>
           <div class="deliverable-item">
             <div class="deliverable-icon">02</div>
-            <h3>Key Findings + Root Cause Analysis</h3>
-            <p>The biggest issues affecting margin, efficiency, and consistency — plus the underlying reasons those issues are happening in the first place.</p>
+            <h3>Key Sources of Performance Drag</h3>
+            <p>The operational and commercial issues creating friction beneath the surface, even when day-to-day activity appears normal.</p>
           </div>
           <div class="deliverable-item">
             <div class="deliverable-icon">03</div>
-            <h3>Strategic Recommendations + Quick Wins</h3>
-            <p>Clear actions to take now, including immediate quick wins, implementation guidance, expected impact, and ownership by priority area.</p>
+            <h3>Likely Root Causes</h3>
+            <p>The patterns behind those issues, explained in plain English — so you understand what may actually be driving underperformance.</p>
           </div>
           <div class="deliverable-item">
             <div class="deliverable-icon">04</div>
-            <h3>KPIs, Risks + 90-Day Action Plan</h3>
-            <p>A practical KPI framework, a risk and mitigation view, and a sequenced 90-day roadmap showing what to do first, next, and how to track progress.</p>
+            <h3>Initial Priority Areas</h3>
+            <p>The first areas to address over the next 90 days, so you know where to focus before investing in more tools, people, or process changes.</p>
           </div>
         </div>
         <div class="dark-cta">
@@ -675,24 +502,24 @@
           </div>
           <div class="step">
             <div class="step-badge">2</div>
-            <h3>Keldron diagnoses what matters most</h3>
-            <p>It identifies your primary constraint, sources of margin erosion, and key performance gaps — then ranks them by impact so you know where to act first.</p>
+            <h3>Keldron identifies what matters most</h3>
+            <p>It diagnoses your primary constraint, highlights sources of margin erosion and performance drag, and helps you see what is most likely affecting results.</p>
           </div>
           <div class="step">
             <div class="step-badge">3</div>
-            <h3>Get your report and 90-day roadmap instantly</h3>
-            <p>A plain-English diagnostic plus a clear, sequenced 90-day action plan — ready in minutes, not weeks. Download it, share it, act on it today.</p>
+            <h3>Get a clear diagnostic instantly</h3>
+            <p>You receive a plain-English report showing what to focus on first, what may be causing the drag, and where management attention should go over the next 90 days.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- WHO THIS IS FOR -->
-    <section class="section" style="padding-top:56px; padding-bottom:56px; background: var(--surface-2, #f0ece0);">
+    <section class="section" style="padding-top:56px; padding-bottom:56px; background: rgba(255,255,255,0.12);">
       <div class="container">
         <h2 class="section-title">Built for owner-led businesses that need clarity fast</h2>
         <p class="section-intro">
-          Best fit if you run a business where margin, process, or growth feels weaker than it should.
+          Best fit if your business feels underpowered — and you need clarity on the underlying issue before making the next move.
         </p>
         <div class="pillars" style="grid-template-columns: repeat(4, 1fr);">
           <div class="pillar" style="text-align:center;">
@@ -712,7 +539,7 @@
             <h3 class="pillar-title">Local Services</h3>
           </div>
         </div>
-        <p style="text-align:center; color: var(--ink-muted, #6b6b5e); font-size:14px; margin-top:28px; line-height:1.8;">
+        <p style="text-align:center; color: rgba(17,17,17,0.62); font-size:14px; margin-top:28px; line-height:1.8;">
           And especially if: margins feel tighter than they should &nbsp;·&nbsp;
           operations feel busier than the results justify &nbsp;·&nbsp; the team is stretched but growth feels flat &nbsp;·&nbsp;
           you need a clear plan without hiring a consultant
@@ -730,7 +557,7 @@
             <summary>Who gets the most value from Keldron?</summary>
             <div class="faq-content">
               Owner-led businesses that know profit, growth, or operations are underperforming —
-              but don't yet know the primary reason. If you're busy but results feel flat, Keldron is built for you.
+              but do not yet know the primary reason. If you're busy but results feel flat, Keldron is built for you.
             </div>
           </details>
 
@@ -745,8 +572,8 @@
           <details>
             <summary>Is this accounting software?</summary>
             <div class="faq-content">
-              No. Keldron is not a dashboard or bookkeeping tool. It identifies your primary operational
-              constraint, sources of margin erosion, and performance gaps — then gives you a clear 90-day roadmap to act on them.
+              No. Keldron is not a dashboard or bookkeeping tool. It helps you identify the primary constraint
+              affecting performance, uncover sources of margin erosion, and clarify where management attention should go first.
             </div>
           </details>
 
@@ -787,7 +614,7 @@
     <!-- TESTIMONIAL — before closing CTA -->
     <section class="testimonial-section">
       <div class="container">
-        <p style="text-align:center; font-size:13px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color: var(--ink-muted, #6b6b5e); margin:0 0 24px;">Practitioners are already seeing results</p>
+        <p style="text-align:center; font-size:13px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color: rgba(17,17,17,0.62); margin:0 0 24px;">Practitioners are already seeing results</p>
 
         <div class="testimonial-grid">
           <div class="testimonial-card featured">
@@ -843,10 +670,10 @@
     <!-- CLOSING CTA -->
     <section class="closing">
       <div class="container closing-inner">
-        <h2 class="closing-title">Stop guessing. Start seeing clearly.</h2>
-        <p class="closing-text">Identify your primary constraint, uncover sources of margin erosion, and get a 90-day action plan. Start free.</p>
-        <p style="font-size:14px; font-weight:600; color: var(--ink, #0f0e0c); margin: 0 0 14px;">
-          Most businesses uncover issues affecting <span style="color: var(--gold, #c8942a);">5–15% of margin performance.</span>
+        <h2 class="closing-title">Before you make the next move, make sure it addresses the right issue.</h2>
+        <p class="closing-text">Identify the primary constraint affecting performance, uncover sources of margin erosion, and clarify where to focus first. Start free.</p>
+        <p style="font-size:14px; font-weight:600; color: var(--ink); margin: 0 0 14px;">
+          Most businesses uncover issues affecting <span style="color: var(--gold);">focus, margin, or execution quality</span> in the first diagnostic.
         </p>
         <a class="btn btn-primary btn-lg"
            href="https://app.keldron.io"
