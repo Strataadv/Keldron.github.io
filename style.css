@@ -158,7 +158,7 @@ a:hover { text-decoration: underline; opacity: 0.96; }
 .hero-grid {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
-  align-items: center;
+  align-items: start;
   gap: 36px;
 }
 
@@ -325,6 +325,7 @@ a:hover { text-decoration: underline; opacity: 0.96; }
 
 .hero-mock {
   justify-self: end;
+  align-self: start;
   max-width: 520px;
   width: 100%;
 }
@@ -845,8 +846,8 @@ summary::-webkit-details-marker { display: none; }
 
 @media (max-width: 980px) {
   .nav { display: none; }
-  .hero-grid { grid-template-columns: 1fr; }
-  .hero-mock { justify-self: start; max-width: 560px; }
+  .hero-grid { grid-template-columns: 1fr; align-items: start; }
+  .hero-mock { justify-self: start; align-self: start; max-width: 560px; }
   .deliverable-grid { grid-template-columns: repeat(2, 1fr); }
   .pillars { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
